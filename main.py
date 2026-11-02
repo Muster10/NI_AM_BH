@@ -118,6 +118,8 @@ if __name__ == '__main__':
     parameters = Parameters()
     print("-" * 20)
     manager = Manager(parameters)
+    
+    print("--- Apartment Managment System ---")
     print("-" * 20)
 
     for apartment in manager.apartments.values():
