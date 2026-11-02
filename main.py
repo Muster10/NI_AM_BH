@@ -116,6 +116,8 @@ class TenantSettlement(BaseModel):
 if __name__ == '__main__':
     parameters = Parameters()
     manager = Manager(parameters)
+    
+    print("--- Apartment Managment System ---")
 
     for apartment in manager.apartments.values():
         print(apartment.key, apartment.name, apartment.location, apartment.area_m2)
