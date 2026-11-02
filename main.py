@@ -114,10 +114,13 @@ class TenantSettlement(BaseModel):
     balance: float
 
 if __name__ == '__main__':
+    print("-" * 20)
     parameters = Parameters()
+    print("-" * 20)
     manager = Manager(parameters)
     
     print("--- Apartment Managment System ---")
+    print("-" * 20)
 
     for apartment in manager.apartments.values():
         print(apartment.key, apartment.name, apartment.location, apartment.area_m2)
