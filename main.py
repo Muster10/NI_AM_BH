@@ -83,13 +83,7 @@ class Bill(BaseModel):
         assert isinstance(data, list), "Expected a list of bills"
         return [Bill(**bill) for bill in data]
 
-class ApartmentSettlement(BaseModel):
-    apartment_key: str
-    month: int
-    year: int
-    bills_sum: float
-    rent_sum: float
-    remaining_amount: float
+
     
 class Manager:
     def __init__(self, parameters: Parameters):
