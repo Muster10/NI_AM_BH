@@ -89,7 +89,10 @@ class ApartmentSettlement(BaseModel):
     year: int
     bills_sum: float
     rent_sum: float
-    remaining_amount: float
+    remaining_amount: float 
+    
+    
+    
     
 class Manager:
     def __init__(self, parameters: Parameters):
