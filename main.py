@@ -105,7 +105,7 @@ class TenantSettlement(BaseModel):
     tenant: str
     settlement_month: int
     settlement_year: int
-    apartment: str
+    apart: str
     rent: float
     bills: float
     total_transfers: float
